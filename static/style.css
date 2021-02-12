@@ -17,6 +17,20 @@ body {
     top: 20%;
 }
 
+#bt-title {
+  text-align: center;
+  color: goldenrod;
+  top: 20%;
+  font-family: 'Leckerli One', cursive; 
+  font-size: 40px; 
+  margin-top: 0; 
+  background-image: url(../static/year-of-ox.svg); 
+  background-repeat:no-repeat; 
+  background-position:center; 
+  background-size: 100px; 
+  padding:20px
+}
+
 label {
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -53,7 +67,7 @@ label {
         text-align: center;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 2px;
+        border-radius: 5px;
     }
 
     .card .front {
@@ -74,7 +88,7 @@ label {
     .back-font{
         margin-left: 20px;
         margin-right: 20px;
-        margin-top:70px
+        margin-top:85px
     }
 
 label:hover .card {
