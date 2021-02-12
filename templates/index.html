@@ -4,7 +4,7 @@
 	<title> {{title}} </title>
     <link rel="shortcut icon" href="static/re.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ma+Shan+Zheng&display=swap&family=Leckerli+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -15,18 +15,21 @@
         <div class="hd-bg bggrey"></div>
     </header>
     <div id="total">
-        <p id="title">恭  贺<br>新  年</p>
+        <p id="title">恭 贺<br>新 年</p>
         <label>
             <input type="checkbox"  />
             <div class="card">
                 <div class="front"></div>
-                <div class="back">
+                <div class="back" style="background-image: url(../static/fireworks{{firework}}.svg);">
                     <p class="back-font">
-                        Happy Lunar New Year 2021! May this year bring peace, good health, happiness, prosperity. Have a fabulous New Year ahead! Here's wishing each and every one of you an awesome year.           
-                    </p></div>
+                        {{greeting}}
+                        <br><br>
+                        <span>— DigitalEd</span>
+                    </p>
+                </div>
             </div>
         </label>
-        <p id="title" style="font-family: 'Lato';font-size: 40px; margin-top: 0;">2021</p>
+        <p id="title" style="font-family: 'Leckerli One', cursive; font-size: 40px; margin-top: 0;">2021</p>
     </div>
     <footer>
         <div class="ft-bg bgblue"></div>

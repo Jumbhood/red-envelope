@@ -74,6 +74,7 @@ label {
     .back-font{
         margin-left: 20px;
         margin-right: 20px;
+        margin-top:70px
     }
 
 label:hover .card {
