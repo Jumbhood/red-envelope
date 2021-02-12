@@ -1,0 +1,149 @@
+body {
+    background: crimson;
+    font-family: Open Sans;
+    font-size: 20px;
+  	color: #222;
+}
+
+#total {
+    left: 50%;
+}
+
+#title {
+    font-family: 'Ma Shan Zheng', cursive;
+    text-align: center;
+    font-size: 100px;
+    color: goldenrod;
+    top: 20%;
+}
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    position: relative;
+    top: 125px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+    font-family: 'Lato', sans-serif;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        line-break: auto;
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .front {
+        background-image: url(./redenvelope.jpeg);
+        background-size:cover;
+    }
+
+    .card .back {
+        color: #928123;
+        background: rgb(241, 206, 199);
+        align-items: center;
+        display: flex;
+        line-height: 30px;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+
+    .back-font{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.hd-bg{
+  position: absolute;
+  top: 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.ft-bg{
+  position: absolute;
+  bottom: 0;
+}
+
+.bgblue{
+  background-color: #0799BE;
+  width: 25%;
+  left: 0;
+  height: 10px;
+}
+.bgpurple{
+  background-color: #802A8E;
+  width: 25%;
+  left: 25%;
+  height: 10px;
+}
+.bggreen{
+  background-color: #9BC13C;
+  width: 25%;
+  left: 50%;
+  height: 10px;
+}
+.bggrey{
+  background-color: #747574;
+  width: 25%;
+  left: 75%;
+  height: 10px;
+}
